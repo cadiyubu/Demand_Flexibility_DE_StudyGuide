@@ -1,0 +1,10 @@
+# How each source type is checked. Phase 1 weeks 1-4: everything "manual".
+# Days 26-27: scripts/check_sources.py implements the automated types.
+types:
+  manual:     {how: "Monthly check in the Friday review; update 'checked'"}
+  gii-xml-hash: {how: "Download law XML from gesetze-im-internet.de, hash normalised text", status: planned}
+  eurlex-feed:  {how: "Cellar RSS/Atom or REST by CELEX; new item or consolidated version", status: planned}
+  page-hash:    {how: "Fetch page, strip boilerplate, SHA-256; change = review needed", status: planned}
+  neuris-eli:   {how: "rechtsinformationen.bund.de /v1 legislation by ELI; new point-in-time version", status: "verify API status first"}
+schedule: weekly
+on_change: "open GitHub issue listing notes in cited_by; human updates status"

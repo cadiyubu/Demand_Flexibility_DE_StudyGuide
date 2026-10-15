@@ -1,0 +1,96 @@
+# Rule tracker. One entry per law, determination or code.
+# status: in-force | in-force-suspended | adopted-not-applicable | draft | consultation | repealed
+# Never store legal text here. Update status by hand after reading the change.
+
+- id: enwg-14a
+  title_de: Netzorientierte Steuerung von steuerbaren Verbrauchseinrichtungen
+  jurisdiction: DE
+  instrument: law
+  status: in-force
+  effective: 2024-01-01   # application of BNetzA determinations
+  checked: 2026-10-13
+  open: "Did the 2026 EnWG amendments (29 Mar, 23 Jul 2026) change §14a text?"
+  endpoints:
+    human: https://www.gesetze-im-internet.de/enwg_2005/__14a.html
+    machine: https://www.gesetze-im-internet.de/enwg_2005/xml.zip   # verify path
+    eli: null
+  watcher: manual
+  cited_by: [L07]
+
+- id: bnetza-bk6-22-300
+  title_de: Festlegung steuerbare Verbrauchseinrichtungen (Netzzugang)
+  jurisdiction: DE
+  instrument: bnetza-determination
+  status: in-force
+  effective: 2024-01-01
+  checked: 2026-10-13
+  endpoints: {human: null, machine: null}   # add BNetzA page on Day 18
+  watcher: manual
+  cited_by: [L07]
+
+- id: bnetza-bk8-22-010-a
+  title_de: Festlegung Netzentgelte für steuerbare Verbrauchseinrichtungen
+  jurisdiction: DE
+  instrument: bnetza-determination
+  status: in-force
+  effective: 2024-01-01
+  checked: 2026-10-13
+  endpoints: {human: null, machine: null}   # add BNetzA page on Day 18
+  watcher: manual
+  cited_by: [L07]
+
+- id: enwg-14c
+  title_de: Marktgestützte Beschaffung von Flexibilitätsdienstleistungen im Elektrizitätsverteilernetz
+  jurisdiction: DE
+  instrument: law
+  status: in-force-suspended
+  status_basis: "§118(28) EnWG: duty suspended per service until BNetzA approves or sets specifications"
+  effective: null
+  checked: 2026-10-13
+  open: "Any BNetzA approval or determination under §14c(2)/(3)? No reliable evidence found on 13 Oct 2026."
+  endpoints:
+    human: https://www.gesetze-im-internet.de/enwg_2005/__14c.html
+    machine: https://www.gesetze-im-internet.de/enwg_2005/xml.zip   # verify path
+    eli: null
+  watcher: manual
+  cited_by: [L08]
+
+- id: eu-nc-dr
+  title: Network Code on Demand Response
+  jurisdiction: EU
+  instrument: commission-regulation
+  status: draft
+  status_basis: "ACER proposal 7 Mar 2025; Commission targeted consultation 14 Jul - 12 Sep 2025; adoption expected 2026 (BDEW)"
+  effective: null
+  checked: 2026-10-13
+  open: "Adopted yet? Check EUR-Lex / comitology."
+  endpoints:
+    human: https://www.acer.europa.eu/news/new-network-code-demand-response-will-further-advance-energy-transition
+    celex: null   # add when published in the Official Journal
+  watcher: manual
+  cited_by: [L05, L08, L09]
+
+- id: eu-fna-methodology
+  title: National flexibility needs assessment methodology (ACER Decision 05/2025, Annex I)
+  jurisdiction: EU
+  instrument: acer-decision
+  status: in-force
+  effective: 2025-07
+  milestones: {national-assessments: 2026-07, national-targets: 2027-01, acer-eu-assessment: 2027-07}
+  checked: 2026-10-13
+  open: "Germany's national FNA report published? Designated entity?"
+  endpoints:
+    human: https://www.acer.europa.eu/news/acer-decide-national-flexibility-needs-assessment-methodology
+  watcher: manual
+  cited_by: [L02]
+
+- id: eu-reg-2024-1747
+  title: Electricity Market Design reform regulation (amends Reg. 2019/943)
+  jurisdiction: EU
+  instrument: regulation
+  status: in-force
+  effective: 2024
+  checked: 2026-10-13
+  endpoints: {celex: 32024R1747}
+  watcher: manual
+  cited_by: [L01, L02]

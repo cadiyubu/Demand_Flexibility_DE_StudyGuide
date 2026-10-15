@@ -1,0 +1,98 @@
+# Source registry. Pointers + metadata only; never paste full texts.
+# tier: T1 primary | T2 independent research | T3 specialist press | T4 interested party
+# confidence: high | medium | low
+
+- id: bmj-enwg-14c
+  title: "§14c EnWG (consolidated)"
+  publisher: BMJ / gesetze-im-internet.de
+  tier: T1
+  url: https://www.gesetze-im-internet.de/enwg_2005/__14c.html
+  published: null
+  accessed: 2026-10-13
+  jurisdiction: DE
+  legal_status: in-force-suspended
+  confidence: high
+  key_claims: ["DSOs procuring flexibility must use transparent, non-discriminatory, market-based procedures; BNetzA approves or sets specifications"]
+  watcher: manual
+
+- id: rewis-enwg-118-synopsis
+  title: "§118 EnWG synopsis incl. para. 28"
+  publisher: rewis.io
+  tier: T3   # secondary reproduction; confirm against gesetze-im-internet.de
+  url: https://rewis.io/aktuell/synopsen/enwg/21334/
+  accessed: 2026-10-13
+  jurisdiction: DE
+  confidence: medium
+  key_claims: ["§14c(1) duty suspended per service until BNetzA approves or sets specifications"]
+  watcher: manual
+
+- id: acer-2025-ncdr-proposal
+  title: ACER proposal for a Network Code on Demand Response
+  publisher: ACER
+  tier: T1
+  url: https://www.acer.europa.eu/news/new-network-code-demand-response-will-further-advance-energy-transition
+  published: 2025-03-07
+  accessed: 2026-10-13
+  jurisdiction: EU
+  legal_status: draft
+  confidence: high
+  key_claims: ["ACER submitted NC DR proposal to the Commission on 7 Mar 2025"]
+  watcher: page-hash
+
+- id: ec-2025-ncdr-consultation
+  title: Targeted consultation on a new network code on demand response
+  publisher: European Commission
+  tier: T1
+  url: https://energy.ec.europa.eu/resources/consultations/targeted-consultation-support-establishment-new-network-code-demand-response_en
+  accessed: 2026-10-13
+  jurisdiction: EU
+  legal_status: consultation-closed
+  confidence: high
+  key_claims: ["Commission reviewing ACER proposal; consultation closed"]
+  watcher: page-hash
+
+- id: bdew-2025-ncdr
+  title: Konsultation zum Network Code on Demand Response
+  publisher: BDEW
+  tier: T4   # industry association
+  url: https://www.bdew.de/service/konsultation-zum-network-code-on-demand-response/
+  accessed: 2026-10-13
+  jurisdiction: EU
+  confidence: medium
+  key_claims: ["Adoption expected in 2026; consultation 14 Jul - 12 Sep 2025"]
+  watcher: manual
+
+- id: acer-2025-fna-methodology
+  title: ACER to decide on the national flexibility needs assessment methodology
+  publisher: ACER
+  tier: T1
+  url: https://www.acer.europa.eu/news/acer-decide-national-flexibility-needs-assessment-methodology
+  published: 2025-04-22
+  accessed: 2026-10-13
+  jurisdiction: EU
+  confidence: high
+  key_claims: ["National assessments due Jul 2026; national targets within 6 months; EU-wide assessment by Jul 2027"]
+  watcher: page-hash
+
+- id: jrc-2026-fna-guide
+  title: A guide for practitioners on Articles 7-10 of the FNA methodology (JRC146931)
+  publisher: JRC
+  tier: T2
+  url: https://publications.jrc.ec.europa.eu/repository/handle/JRC146931
+  published: 2026-08-12
+  accessed: 2026-10-13
+  jurisdiction: EU
+  confidence: high
+  key_claims: ["FNA approved as Annex I to ACER Decision 05/2025; anti-double-counting rule between Art. 8, 9, 10"]
+  watcher: none
+
+- id: op-cellar-feeds
+  title: Cellar RSS and Atom feeds
+  publisher: Publications Office of the EU
+  tier: T1
+  url: https://op.europa.eu/en/web/cellar/cellar-data/rss-and-atom-feeds
+  accessed: 2026-10-13
+  jurisdiction: EU
+  confidence: high
+  key_claims: ["Cellar offers RSS/Atom notification feeds and SPARQL access"]
+  watcher: none
